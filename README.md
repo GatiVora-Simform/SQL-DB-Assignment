@@ -7,21 +7,34 @@ This assignment focuses on setting up and managing an **EMPLOYEE** database, whi
 
 #### 1. **EmployeeInfo**
 
-- EmpID
-- EmpFname
-- EmpLname
-- Department
-- Project
-- Address
-- DOB
-- Gender
+
+| Column Name   | Data Type     | 
+| ------------- | ------------- |
+| `EmpID`       | INT           | 
+| `EmpFname`    | VARCHAR(50)    | 
+| `EmpLname`    | VARCHAR(50)    | 
+| `Department`  | VARCHAR(50)    | 
+| `Project`     | VARCHAR(20)    | 
+| `Address`     | VARCHAR(50)    | 
+| `DOB`         | DATE          | 
+| `Gender`      | VARCHAR(20)    | 
+
+
+---
 
 #### 2. **EmployeePosition**
 
-- EmpID
-- EmpPosition
-- DateOfJoining
-- Salary
+
+| Column Name      | Data Type     | 
+| ---------------- | ------------- | 
+| `EmpID`          | INT           | 
+| `EmpPosition`    | VARCHAR(50)    | 
+| `DateOfJoining`  | DATE          | 
+| `Salary`         | INT           |
+
+
+
+---
 
 ## SQL Queries for Employee Database
 
@@ -70,3 +83,5 @@ select count(*),department from employee_info group by department order by count
 create index idx_empid on employee_position(empid);
 
 ```
+
+
