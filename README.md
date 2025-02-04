@@ -80,7 +80,7 @@ select count(*),department from employee_info group by department order by count
 ### 8. Create indexing for any particular field and show the difference in data fetching before and after indexing
 
 ```sql
-create index idx_empid on employee_position(empid);
+create index idx_fname on employee_info(empfname);
 
 ```
 
